@@ -2,13 +2,19 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css" />
 	<title>Formulaire</title>
 </head>
 <body>
 
+	<div class="titreform">
+		<h1> Formulaire de réferencement </h1>
+	</div>
+
 
 	<?php 
 
+//Connection à la base de données
 	try
 	{
 
@@ -20,12 +26,12 @@
 	{
 		die('Erreur : ' . $e->getMessage());
 	}
-
+// vérifie si tout les champs sont vides
 	if(empty($_POST['nom']) && empty($_POST['nombre'] && empty($_POST['date']&& empty($_POST['heure']&& empty($_POST['localisation'])))))
 	{
 		echo "";
 	}
-
+// sinon on récupére les données saisies dans les inputs 
 	else
 	{ 
 		header('Location: accueil.php');
@@ -48,17 +54,19 @@
 
 	?>
 
-	<form method="POST">
+<!-- Tout les inputs ou on récupére les valeurs pour pousser dans la BDD -->
+
+	<form method="POST" class="bigimput">
 		<p> Votre nom </p>
-		<input type="text" name="nom" placeholder="Veuillez entrer votre nom">
+		<input type="text"  name="nom" placeholder="Veuillez entrer votre nom">
 		<p> nombre de canards aperçu </p>
-		<input type="text" name="nombre" placeholder="nombre">
+		<input type="text"  name="nombre" placeholder="">
 		<p> Date du réferencement  </p>
 		<input type="date" name="date" placeholder="Date">
 		<p> L'heure du réferencement  </p>
 		<input type="time" name="heure" placeholder="Heure">
 		<p> Localisation du réferencement  </p>
-		<input type="text" name="localisation" placeholder="localisation">
+		<input type="text" name="localisation" placeholder="">
 		<div id="but" >
 			<button type="submit" id="buton" >Ajouter</button>
 		</div>

@@ -8,11 +8,16 @@
 </head>
 <body>
 
-	<h1> Les coins coins Gersois du canard </h1>
+
+	<div id="titre">
+		<h1> Les coins coins Gersois du canard </h1>
+	</div>
 
 
 
 	<?php 
+
+	
 	try
 	{
 
@@ -54,8 +59,8 @@
 	</table>
 
 	<!-- Redirection vers la page Ajouter Ref Canard -->
-	<div>
-		<a  id="add" class="btn waves-effect waves-light pulse" href="form.php">Ajouter un réferencement
+	<div class="add">
+		<a  class="btn waves-effect waves-light pulse" href="form.php">Ajouter un réferencement
 			<i class="material-icons right"></i>
 		</a>
 	</div>

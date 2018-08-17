@@ -1,13 +1,48 @@
-h1
+	/* Titre page d'accueil */
+#titre 
 {
+	display: block;
+	margin:auto;
 	text-align: center;
-	padding-bottom: 60px;
+	margin-bottom: 60px;
+	border: 2px solid black;
+    border-radius: 5px;
+    width: 700px;
 }
-#add
+
+/* Titre page du form */
+
+.titreform
+{
+	display: block;
+	margin:auto;
+	text-align: center;
+	margin-bottom: 60px;
+	border: 2px solid black;
+    border-radius: 5px;
+    width: 700px;
+}
+
+/* Boutton ajouter un referencement dans l'accueil  */
+	
+.add
 {
 	display: block;
 	text-align: center;
 	margin-top: 50px
 }
 
- 
+/*   */
+
+.bigimput
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0.5em 0.5em 0.5em 0.5em;
+	margin: 3em 1.5em 3em 1.5em;
+	border-radius:0.5em;
+	background-color: #E8E6E5
+
+}
